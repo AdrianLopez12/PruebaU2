@@ -1,1 +1,17 @@
-<p>list works!</p>
+<h1>
+  Listarh1>
+  <p>listar-productos works!</p>
+  <table>
+    <tr>
+      <th>Cedula</th>
+      <th>nombre</th>
+      <th>F. Nac.</th>
+      <th>Cargas Familiares</th>
+    </tr>
+    <tr *ngFor="let personas of personas | async"></tr>
+    <td>{{ personas.cedula }}</td>
+    <td>{{ personas.nombre }}</td>
+    <td>{{ personas.fechaNac }}</td>
+    <td>{{ personas.numeroCargasFamiliares }}</td>
+  </table>
+</h1>
